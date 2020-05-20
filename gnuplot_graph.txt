@@ -1,0 +1,18 @@
+
+set title 'Random Network(1000)'
+set title 'Small-World Network(1000)'
+set title 'Scale-Free Network(1000)'
+set xlabel '# of Seed'
+set ylabel 'Propagation'
+set xr [0:5]           
+set yr [0:1000]
+plot 'd:\graph.txt' u 1:2 title 'Random' with linespoints, 'd:\graph.txt' u 1:3 title 'Degree' with linespoints,'d:\graph.txt' u 1:4 title 'CELF' with linespoints,'d:\graph.txt' u 1:5 title 'LIDH' with linespoints,'d:\graph.txt' u 1:6 title 'B-Square' with linespoints,'d:\graph.txt' u 1:7 title 'C-Square' with linespoints
+
+set key bottom right
+replot
+
+set ylabel 'Propagation'
+set ylabel 'Blocking(Lower Blound)'
+set ylabel 'Blocking(Upper Blound)'
+
+set xlabel 'Density'

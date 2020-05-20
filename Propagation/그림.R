@@ -1,0 +1,31 @@
+plot(Node,CELF,ylab='Processing time',xlab='# of nodes',main="Scale_free Graph",ylim=c(0,200),pch=4,type='o',col='#228b22')
+par(new=T)
+plot(Node,C_CELF,ylab='',xlab='',ylim=c(0,200),pch=0,type='o',col='#ff3030')
+legend(x=920,y=25,c('CELF','C-CELF'),cex=0.7,pch=c(2.0),col=c('#228b22','#ff3030'))
+
+plot(Node,CELF,ylab='# of Active Node',xlab='# of nodes',main="Scale_free Graph",ylim=c(0,1000),pch=4,type='o',col='#3F0099')
+par(new=T)
+plot(Node,C_CELF,ylab='',xlab='',ylim=c(0,1000),pch=0,type='o',col='#D941C5')
+legend(x=935,y=95,c('CELF','C-CELF'),cex=0.7,pch=c(2.0),col=c('#3F0099','#D941C5'))
+
+
+plot(Node,x,ylab='# of Active Node',xlab='# of nodes',main="propagation",ylim=c(0,1000),pch=4,type='o',col='#F29661')
+par(new=T)
+plot(Node,y,ylab='',xlab='',ylim=c(0,1000),pch=3,type='o',col='#9FC93C')
+par(new=T)
+plot(Node,z,ylab='',xlab='',ylim=c(0,1000),pch=0,type='o',col='#D941C5')
+legend(x=900,y=125,c('Random','Small_world','Scale_free'),cex=0.7,pch=c(4,3,0),col=c('#F29661','#9FC93C','#D941C5'))
+
+
+plot(Node,x,ylab='Processing time',xlab='# of nodes',main=" ",ylim=c(0,200),pch=1,type='o',col='#228b22')
+par(new=T)
+plot(Node,x1,ylab='',xlab='',ylim=c(0,200),pch=1,type='o',col='#228b22')
+par(new=T)
+plot(Node,y,ylab='',xlab='',ylim=c(0,200),pch=2,type='o',col='#9FC93C')
+par(new=T)
+plot(Node,y1,ylab='',xlab='',ylim=c(0,200),pch=2,type='o',col='#9FC93C')
+par(new=T)
+plot(Node,z,ylab='',xlab='',ylim=c(0,200),pch=3,type='o',col='#D941C5')
+par(new=T)
+plot(Node,z1,ylab='',xlab='',ylim=c(0,200),pch=3,type='o',col='#D941C5')
+legend(x=900,y=125,c('Random','Small_world','Scale_free'),cex=0.7,pch=c(1,2,3),col=c('#228b22','#9FC93C','#D941C5'))
